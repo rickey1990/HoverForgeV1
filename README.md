@@ -6,6 +6,8 @@ Hyperforge V1 is a self-contained browser-based futuristic hover-racing game and
 
 Everything runs from a single HTML file with no installation, build system, external assets, or game engine required.
 
+![Hyperforge V1 race](assets/mobile-race-01.png)
+
 ## Features
 
 - **Draw your own circuits** — sketch a closed route and convert it into a playable 3D track.
@@ -22,6 +24,28 @@ Everything runs from a single HTML file with no installation, build system, exte
 - **Save and load projects** — export editable Hyperforge project JSON files and continue later.
 - **16-shot Track Tour** — automatically creates a single PNG contact sheet with cinematic cameras placed around a virtual lap, including the red-light starting grid, pit lane, boost tunnels, banks, crossings, high/low points and other useful track locations.
 - **Track sketch reference** — the original 2D route is included underneath the Track Tour collage.
+
+## Screenshots
+
+### Racing
+
+| Mobile race view | Race HUD |
+| --- | --- |
+| ![Mobile race](assets/mobile-race-01.png) | ![Race HUD](assets/mobile-race-02.png) |
+
+### Pilots
+
+![Pilot selection](assets/pilot-selection.png)
+
+### 16-shot Track Tour
+
+![Track tour example 1](assets/track-tour-01.png)
+
+![Track tour example 2](assets/track-tour-02.png)
+
+![Track tour example 3](assets/track-tour-03.png)
+
+![Track tour example 4](assets/track-tour-04.png)
 
 ## How to run
 
