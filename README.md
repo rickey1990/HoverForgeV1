@@ -1,121 +1,97 @@
-# Hyperforge V1
+# Hyperforge V1 + Draw & Drive V1
 
-**Draw it. Solve it. Race it.**
+**Two browser racing games. Draw a circuit, build it, and race it.**
 
-Hyperforge V1 is a self-contained browser-based futuristic hover-racing game and track maker. Draw a circuit in 2D, let the solver turn it into a banked 3D raceway, add race modules and scenery, choose a pilot, then race the result directly in your browser.
+This repository contains two separate, self-contained HTML games. **Hyperforge V1** is the original futuristic hover racer and track maker. **Draw & Drive V1** is an additional conventional race-car and procedural-terrain prototype developed from the track-building ideas.
 
-Everything runs from a single HTML file with no installation, build system, external assets, or game engine required.
+## Play the games
 
-![Hyperforge V1 race](assets/mobile-race-01.png)
+| Game | Open in your browser | What it is |
+| --- | --- | --- |
+| **Hyperforge V1** | **[Play Hyperforge](index.html)** | The original sci-fi hover racer, pilots, planets, AI opponents, banked roads and space scenery |
+| **Draw & Drive V1** | **[Play Draw & Drive](DrawAndDriveV1.html)** | Daylight race-car prototype, wider asphalt, kerbs, grass run-off, crash barriers, concrete bridges and refuelling |
 
-## Features
+For the hosted version, use [Hyperforge V1](https://rickey1990.github.io/HoverForgeV1/) or [Draw & Drive V1](https://rickey1990.github.io/HoverForgeV1/DrawAndDriveV1.html). GitHub Pages needs to be enabled for these URLs to work. Otherwise download the HTML file and open it locally in Chrome or another modern browser. No installation, external game engine or build process is required.
 
-- **Draw your own circuits** — sketch a closed route and convert it into a playable 3D track.
-- **Automatic 3D track solving** — banking, elevation, slopes, bridges and separated crossings are generated from the route.
-- **START + PIT module** — a combined starting grid, red-light gantry and pit lane/service area.
-- **Boost tunnels** — place boost sections around the course and trigger them while racing.
-- **Up to 10 racers** — choose from ten alien, robot and creature pilots with brightly coloured dart-style hovercraft.
-- **Arcade opponent AI** — rivals use individual racing lines, lane movement and passing behaviour instead of staying in a fixed formation.
-- **Low-hover handling** — craft sit close to the surface and visibly follow banked track edges.
-- **Damage and shields** — barrier contact and craft collisions affect the race, with pit-lane shield charging.
-- **Custom track appearance** — choose road, shoulder and edge treatments.
-- **Deep-space scenery** — planets, moons, stars, nebulae, asteroid belts and other sky options.
-- **Keyboard, touch and controller support** — designed to work on desktop and mobile.
-- **Save and load projects** — export editable Hyperforge project JSON files and continue later.
-- **16-shot Track Tour** — automatically creates a single PNG contact sheet with cinematic cameras placed around a virtual lap, including the red-light starting grid, pit lane, boost tunnels, banks, crossings, high/low points and other useful track locations.
-- **Track sketch reference** — the original 2D route is included underneath the Track Tour collage.
+## Hyperforge V1 — original game
 
-## Screenshots
+![Hyperforge racing](assets/mobile-race-01.png)
 
-### Racing
+- Freehand 2D circuit drawing and automatic 3D banking, elevation, slopes and crossings.
+- Combined START + PIT module, boost tunnels, shields and damage.
+- Ten selectable alien/robot/creature pilots and colourful low-hover craft.
+- Arcade opponents with independent racing lines and passing.
+- Space skies with planets, moons, stars and nebulae.
+- Keyboard, touch and controller support; project JSON save/load.
+- **16-photo track tour** with distinct 3D viewpoints and a track sketch.
+
+### Hyperforge screenshots
 
 | Mobile race view | Race HUD |
 | --- | --- |
 | ![Mobile race](assets/mobile-race-01.png) | ![Race HUD](assets/mobile-race-02.png) |
 
-### Pilots
-
 ![Pilot selection](assets/pilot-selection.png)
 
-### 16-shot Track Tour
+#### Hyperforge 16-shot track tours
 
-![Track tour example 1](assets/track-tour-01.png)
+![Hyperforge track tour 1](assets/track-tour-01.png)
 
-![Track tour example 2](assets/track-tour-02.png)
+![Hyperforge track tour 2](assets/track-tour-02.png)
 
-![Track tour example 3](assets/track-tour-03.png)
+![Hyperforge track tour 3](assets/track-tour-03.png)
 
-![Track tour example 4](assets/track-tour-04.png)
+![Hyperforge track tour 4](assets/track-tour-04.png)
 
-## How to run
+## Draw & Drive V1 — bonus race-track prototype
 
-1. Download or clone this repository.
-2. Open `index.html` in a modern browser.
-3. Draw a track, or use one of the ready-made examples.
-4. Press **Build & check track**.
-5. Add optional race pieces and customise the look.
-6. Choose a pilot and start racing.
+**[Open Draw & Drive V1](DrawAndDriveV1.html)**
 
-No local server is required for normal use.
+Draw & Drive is a separate early-3D-inspired circuit prototype: it keeps the freehand road-building concept but swaps hovercraft and space scenery for a **low-poly race car, daylight sky and generated grassy terrain**.
 
-## Basic controls
+- Draw and solve a closed track, including banked bends, elevation and crossing layouts.
+- Asphalt roads with red-and-white kerbs, grass run-off and roadside barriers.
+- Grass slows the car; barrier impacts cause damage.
+- Concrete flyovers, underpasses, support pillars, earth banks and cuttings.
+- Refuelling pit lane instead of shield charging.
+- Gentler, adjustable steering for mobile/touch play.
+- **16-photo circuit collage** featuring different camera positions, pit, bridges, bends and the track sketch; save it as a PNG.
+- Single-file HTML; runs offline in a compatible browser.
 
-### Desktop
+### Draw & Drive screenshots
 
-- **A / D** or **Left / Right arrows** — drive and steer.
-- **Space** — drift / brake.
-- **B** — boost while inside a boost tunnel.
-- **P** — toggle pit assist.
+#### 3D circuit overview
 
-### Touch
+![Draw & Drive circuit overview](assets/draw-drive-overview.jpg)
 
-Use the large **LEFT**, **RIGHT**, **DRIFT / BRAKE** and **BOOST** controls beneath the race view.
+#### 16-shot camera collage — example circuit 1
 
-### Controller
+![Draw & Drive V1 track tour example 1](assets/draw-drive-tour-01.jpg)
 
-Hyperforge includes gamepad support and rebinding controls inside the game. The default layout uses shoulder/trigger or D-pad controls for steering, with face buttons for drift and boost.
+#### 16-shot camera collage — example circuit 2
 
-## Track-building workflow
+![Draw & Drive V1 track tour example 2](assets/draw-drive-tour-02.jpg)
 
-Hyperforge is organised into a simple five-step flow:
+## Getting started
 
-1. **Draw** — create the route and elevation zones.
-2. **Solve** — turn the sketch into valid 3D race geometry.
-3. **Race pieces** — add the combined START + PIT module and boost tunnels.
-4. **Look** — customise track materials and the space environment.
-5. **Play Game** — select a pilot, choose the race grid and race the course.
+1. Open **[Hyperforge V1](index.html)** or **[Draw & Drive V1](DrawAndDriveV1.html)**.
+2. Sketch a closed circuit or choose an example.
+3. Build/solve the track and inspect any geometry warnings.
+4. Add race pieces or adjust the look.
+5. Start driving, then use the camera/track-tour controls to save photos.
 
-The maker also includes undo/redo, example tracks, save/load project support and geometry checks intended to catch invalid or overly sharp track designs before racing.
+**Desktop:** Arrow keys or A/D to steer; Space to drift/brake. Hyperforge also has boost and pit controls.  
+**Mobile:** Use the on-screen steering, drift and pit controls.
 
-## 16-shot Track Tour
+The two games are independent; a saved project from one is not guaranteed to load into the other.
 
-The Track Tour runs a virtual lap without normal race physics and captures sixteen distinct 3D locations around the course. It prioritises useful features such as:
+## Files
 
-- the full starting grid beneath red lights;
-- the selected planet behind the start when possible;
-- pit lane;
-- boost tunnels;
-- steep banks;
-- bridges/crossings;
-- highest and lowest track sections;
-- steep climbs and descents;
-- sharp bends;
-- additional well-spaced trackside viewpoints.
+- `index.html` — original Hyperforge V1 game.
+- `DrawAndDriveV1.html` — separate Draw & Drive V1 prototype.
+- `assets/` — screenshots used in this README.
+- `LICENSE` — MIT license.
 
-The final PNG also includes the original track sketch as a route-plan reference.
+## Status and license
 
-## Project format
-
-Saved courses are exported as editable JSON project files. They retain track geometry/settings so a design can be loaded back into Hyperforge and modified later.
-
-## Browser support
-
-A current desktop or mobile browser with Canvas and WebGL support is recommended.
-
-## Status
-
-**Hyperforge V1** is an experimental hobby project. Feedback, bug reports and unusual track designs are welcome — especially around handling, opponent AI, track solving, mobile controls and camera placement.
-
-## Licence
-
-Hyperforge V1 is released under the **MIT License**. See [LICENSE](LICENSE).
+Both games are experimental browser projects. Track-building and WebGL rendering may vary across devices. Released under the **MIT License**; see [LICENSE](LICENSE).
